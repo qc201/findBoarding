@@ -1,0 +1,14 @@
+type BoardingProvider @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  description: String!
+  profile_img: String!
+  images: [String]
+  price_large: String
+  price_small: String
+  large_dog: String
+  small_dog: String
+  latitude: String!
+  longitude: String!
+}
+ 

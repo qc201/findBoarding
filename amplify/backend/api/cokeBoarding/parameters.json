@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "cokeBoarding",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-10-15T18:08:55.937Z"
+}

@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cokeboarding-staging-215044-authRole",
+      "UnauthRoleArn": "arn:aws:iam::573227183303:role/amplify-cokeboarding-staging-215044-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::573227183303:role/amplify-cokeboarding-staging-215044-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-cokeboarding-staging-215044-deployment",
+      "UnauthRoleName": "amplify-cokeboarding-staging-215044-unauthRole",
+      "StackName": "amplify-cokeboarding-staging-215044",
+      "StackId": "arn:aws:cloudformation:us-west-2:573227183303:stack/amplify-cokeboarding-staging-215044/6da111f0-481c-11ed-a88b-0ae9724b85fb",
+      "AmplifyAppId": "d17z54v50ps8xy"
+    },
+    "categories": {
+      "auth": {
+        "cokeBoarding": {}
+      }
+    }
+  }
+}
