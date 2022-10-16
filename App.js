@@ -13,6 +13,7 @@ import GuestScreen from './src/screens/Guests';
 import 'react-native-gesture-handler';
 import Router from './src/navigation/Router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import Home from './src/Home';
 
 
 
@@ -21,5 +22,8 @@ export default function App() {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Router />
       </GestureHandlerRootView>
+      // <View>
+      //   <Home />
+      // </View>
   );
 }

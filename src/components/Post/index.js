@@ -4,6 +4,11 @@ import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { useRoute } from '@react-navigation/native';
 import { createModuleResolutionCache } from 'typescript';
+import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import {getBoardingProvider, listBoardingProviders} from '../../graphql/queries'
+
+
+
 
 const Post = (props) => {
     const post = props.post;
@@ -12,13 +17,21 @@ const Post = (props) => {
         // console.log(route.params)
         navigation.navigate('Post', {postId: post.id})
     }
-    const route = useRoute();
-    const onClick = () => {
-        console.log(route.params);
-        console.log(post.id);
-    }
+
+    // async function getData() {
+    //     const curId = post.id;
+    //     console.log(curId)
+    //     // add66799-1465-47b3-9c5b-0eaad74807f9
+    //     try {
+    //         const info = await API.graphql(graphqlOperation(getBoardingProvider, {id:curId}));
+    //         selectedId = info.data.getBoardingProvider.id;
+            
+    //     } catch (e) {console.log(e)}
+       
+    //   }
+
     return (
-        <Pressable onPress={onClick} style={styles.container}>
+        <Pressable onPress={goToPostPage} style={styles.container}>
             {/* image  */}
             <Image 
                 style={styles.image}
