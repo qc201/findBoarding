@@ -1,6 +1,8 @@
 import React from 'react';
 import { View,Text, ScrollView, Pressable, Image } from 'react-native';
 import styles from './styles';
+import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import {getBoardingProvider, listBoardingProviders} from '../../graphql/queries'
 
 const DetailedPost = (props) => {
     

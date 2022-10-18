@@ -4,7 +4,7 @@ import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import { useNavigation } from '@react-navigation/native';
 
-const HomeScreen = () => {
+const HomeScreen = ({ signOut, user }) => {
     const navigation = useNavigation();
 
     return (
@@ -23,6 +23,8 @@ const HomeScreen = () => {
                 <Text style={styles.title}>
                     Find boarding
                 </Text>
+
+
                 {/* button */}
                 <Pressable 
                     style={styles.button}
@@ -31,6 +33,8 @@ const HomeScreen = () => {
                     <Text style={styles.buttonText}>Explore nearby boardings</Text>
 
                 </Pressable>
+
+                
 
             </ImageBackground>
         </View>

@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import {Text} from 'react-native';
+import {Pressable, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import * as React from 'react';
 import type {Node} from 'react';
@@ -14,10 +14,10 @@ import 'react-native-gesture-handler';
 import Router from './src/navigation/Router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Home from './src/Home';
+import { withAuthenticator } from 'aws-amplify-react-native';
 
 
-
-export default function App() {
+const App = ({ signOut, user }) => {
   return (
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Router />
@@ -25,5 +25,8 @@ export default function App() {
       // <View>
       //   <Home />
       // </View>
+      
   );
 }
+// export default App;
+export default withAuthenticator(App);

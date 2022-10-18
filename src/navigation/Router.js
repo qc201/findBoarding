@@ -43,6 +43,7 @@ const Router = () => {
                 options={{headerShown:false}}
                 />
             </Stack.Navigator>
+            
         </NavigationContainer>
     )
 }

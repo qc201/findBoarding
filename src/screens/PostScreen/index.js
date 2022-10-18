@@ -8,6 +8,7 @@ import {getBoardingProvider, listBoardingProviders} from '../../graphql/queries'
 
 
 
+
 export default PostScreen = (props) => {
     const route = useRoute();
     const [post, setPost] = useState([]);
